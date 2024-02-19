@@ -2,15 +2,20 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <title>Otters</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
 </head>
 
 <body>
 
-  <h1>Otters</h1>
+  <div>
+  <h1 class="title">Otters</h1>
+
 
   <h2>
     Why are they cool?
@@ -84,7 +89,25 @@
   making them the adventurous foodies of the marine world. It's like they're on 
   a perpetual seafood safari, exploring the depths one tasty bite at a time!
   </p>
- 
-</body>
+
+  <div class="otter-pop-div">
+    <canvas class="otter-pop-chart" id="otter_population_chart"></canvas> 
+  </div>
+  <script src="scripts/otter_pop_chart.js"></script>
+
+  <div class="learn-more-div">
+    <h2 class="learn-more-banner">Now You Know!</h2>
+
+    <h2 class="footer">
+      © 
+      <script>
+        document.write(new Date().getFullYear())
+      </script> 
+      DriftingOtter. All Rights Reserved.
+    </h2>
+
+  </div>
+
+  </body>
 
 </html>
